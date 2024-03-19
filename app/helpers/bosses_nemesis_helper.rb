@@ -1,0 +1,2 @@
+module BossesNemesisHelper
+end

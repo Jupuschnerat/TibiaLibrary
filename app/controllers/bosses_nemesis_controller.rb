@@ -1,0 +1,2 @@
+class BossesNemesisController < ApplicationController
+end
