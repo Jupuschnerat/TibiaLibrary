@@ -3,8 +3,8 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  has_secure_password
-  
+
+  validates :character_name, presence: true
   belongs_to :group, optional: true
   has_many :owned_groups, class_name: "Group", foreign_key: "owner_id"
 end
